@@ -13,9 +13,11 @@ import org.apache.flink.util.Collector;
 /**
  * @author wrmistra@gmail.com
  * @date 2023/5/11
- * @ Description: word count 样例
+ * @ Description: 对接实时数据流   word count 样例
  * 终端开启websocket ： nc -lk 9888  往9888端口发送数据
  * pk,pk,pk,flink,flink
+ *
+ * 此外还有批处理读取文件 ExecutionEnvironment
  */
 public class StreamingApp {
 
