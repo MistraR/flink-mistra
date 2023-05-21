@@ -12,9 +12,12 @@
 
     <modules>
         <module>flink-datastream</module>
+        <module>imooc-flink-datastream</module>
         <module>flink-sql</module>
         <module>flink-dataset</module>
         <module>flink-basic</module>
+        <module>imooc-flink-project</module>
+        <module>imooc-flink-sql</module>
     </modules>
 
 
@@ -69,6 +72,17 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
                 <version>4.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-clients_${scala.binary.version}</artifactId>
+                <version>${flink.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
